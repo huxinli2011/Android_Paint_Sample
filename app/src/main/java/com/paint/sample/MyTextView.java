@@ -7,9 +7,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * Created by qijian on 17/1/10.
- */
+
 public class MyTextView extends View {
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -31,11 +29,11 @@ public class MyTextView extends View {
         canvas.drawText("harvic\'s blog", baseLineX, baseLineY, paint);
 
         //计算各线在位置
-        Paint.FontMetrics fm = paint.getFontMetrics();
-        float ascent = baseLineY + fm.ascent;
-        float descent = baseLineY + fm.descent;
-        float top = baseLineY + fm.top;
-        float bottom = baseLineY + fm.bottom;
+        Paint.FontMetrics fm = paint.getFontMetrics();//解析详见210 baseLiner指基线
+        float ascent = baseLineY + fm.ascent; //指当前绘制顶线
+        float descent = baseLineY + fm.descent;//当前绘制底线
+        float top = baseLineY + fm.top;//可绘制最顶线
+        float bottom = baseLineY + fm.bottom;//可绘制最底线
 
         //画基线
         paint.setColor(Color.RED);

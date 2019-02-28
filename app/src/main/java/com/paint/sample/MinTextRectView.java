@@ -8,9 +8,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-/**
- * Created by qijian on 17/1/11.
- */
+
 public class MinTextRectView extends View {
     public MinTextRectView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -32,7 +30,7 @@ public class MinTextRectView extends View {
         Paint.FontMetricsInt fm = paint.getFontMetricsInt();
         int top = baseLineY + fm.top;
         int bottom = baseLineY + fm.bottom;
-        int width = (int)paint.measureText(text);
+        int width = (int)paint.measureText(text);//得到文字所占宽度
         Rect rect = new Rect(baseLineX,top,baseLineX+width,bottom);
 
         paint.setColor(0xA0888888);
@@ -40,7 +38,7 @@ public class MinTextRectView extends View {
 
         //画最小矩形
         Rect minRect = new Rect();
-        paint.getTextBounds(text,0,text.length(),minRect);
+        paint.getTextBounds(text,0,text.length(),minRect);//获取指定字符串所对应的最小矩形，以0.0点所在位置为基线
         minRect.top = baseLineY + minRect.top;
         minRect.bottom = baseLineY + minRect.bottom;
         paint.setColor(Color.BLACK);

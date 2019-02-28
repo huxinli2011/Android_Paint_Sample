@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 
 
-public class MinTextRectActivity extends Activity {
+public class PaintPathEffectActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.min_tv_rect_activity);
+        setContentView(R.layout.paint_patheffect_activity);
     }
 }

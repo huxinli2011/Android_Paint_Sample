@@ -3,9 +3,7 @@ package com.paint.sample;
 import android.app.Activity;
 import android.os.Bundle;
 
-/**
- * Created by qijian on 17/1/11.
- */
+
 public class MyTextViewActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

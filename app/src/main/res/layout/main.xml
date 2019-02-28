@@ -16,5 +16,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="文字最小矩形"/>
+    <Button
+        android:id="@+id/text_paint_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Paint基本用法 setPathEffect 路径样式"/>
+    <Button
+        android:id="@+id/text_paint_strokecap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Paint基本用法 setStrokeCap() 线帽样式"/>
+    <Button
+        android:id="@+id/text_paint_strokjoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Paint基本用法 setStrokeJoin() 路径的转角样式  -- 绘制文字的基本用法 "/>
 </LinearLayout>
 
